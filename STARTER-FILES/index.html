@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 - E-Commerce Component || Advent of JavaScript</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  </head>
+
+  <body>
+    <main class="wrapper menu">
+      <section class="panel">
+        <h1>To Go Menu</h1>
+        <ul data-menu class="menu"></ul>
+      </section>
+
+      <section class="panel cart">
+        <h1>Your Cart</h1>
+
+        <ul data-cart class="cart-summary">
+          <p class="empty">Your cart is empty.</p>
+          <!-- <li data-id="${id}">
+            <div class="plate">
+              <img src="images/plate__ravioli.png" alt="${alt}" />
+              <div class="quantity">1</div>
+            </div>
+            <div class="content">
+              <p class="menu-item">cchees</p>
+              <p class="price">223</p>
+            </div>
+            <div class="quantity__wrapper">
+              <button data-type="decrease" class="decrease">
+                <img src="images/chevron.svg" />
+              </button>
+              <div class="quantity">1</div>
+              <button data-type="increase" class="increase">
+                <img src="images/chevron.svg" />
+              </button>
+            </div>
+            <div data-foodprice="${price" * count} class="subtotal">ggg</div>
+          </li> -->
+        </ul>
+
+        <div class="totals">
+          <!-- <div class="line-item">
+            <div class="label">Subtotal:</div>
+            <div data-pretax class="amount price subtotal">$0.00</div>
+          </div> -->
+          <!-- <div class="line-item">
+            <div class="label">Tax:</div>
+            <div data-tax class="amount price tax">$0.00</div>
+          </div> -->
+          <div class="line-item total">
+            <div class="label">Total:</div>
+            <div data-aftertax class="amount price total">$0.00</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
